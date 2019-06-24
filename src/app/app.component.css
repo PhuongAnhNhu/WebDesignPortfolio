@@ -74,7 +74,7 @@ header > div:hover {
     height: 90vh;
     margin-top: 7%;
     text-align: center;
-    background: linear-gradient( #ADC4AD, #CAD8CA);
+    background: linear-gradient( #83A684, #b5c9b5);
 }
 .flex-contact{
     display: flex;
@@ -113,8 +113,11 @@ header > div:hover {
     font-size: 20px;
     }
 button{
+    margin-top: 3%; 
     font-size: 20px;
     border-radius: 15%;
+    color: #eef6ee;
+    background: #366435
 }
 .grid-togerther{
     font-size: 40px;
@@ -151,7 +154,7 @@ a{
     margin: auto;
     margin-top: 0.5vh;
     width: 200px;
-    height: 150px;;
+    height: 120px;;
     font-size: 15px;
     
 }
