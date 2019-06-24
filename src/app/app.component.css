@@ -1,0 +1,207 @@
+
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0%;
+    
+    /*background-color: #100e17;*/
+    margin-right: 5px;;
+   }
+
+header{
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    margin-top: 0;
+    padding: 0%;
+    position: fixed;
+    /*border: black 2px solid;*/
+    width: 100%; 
+    height: 10vh;
+    justify-content: flex-end;
+    top :0;
+    color: pink;
+}
+header > div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5%;
+    margin-bottom: 0%;
+    /*border: #ffcc99 2px solid; */
+    padding: 1%;
+    /*background-color: #100e17;*/
+    color: #ffffff;
+    width: 10vh;
+    height: 10vh;
+    
+    
+}
+.flex-titel{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /*border: red 2px solid;*/
+    z-index: 1;
+    width: 100%;
+    height: 90vh;
+    margin-top: 7%;
+    text-align: center;
+    justify-content: center;
+    
+}
+.titel{
+    display: flex;
+    /*border:  red 2px solid;*/
+    justify-content: center;
+    flex-direction: row;
+    color: #ff99cc;
+}
+header > div:hover {
+    
+    box-shadow: 4px 3px 3px #ffffff, -2px 0 3px #ffffff;
+    opacity: 0.7; /*độ mờ đục */
+  }
+.flex-project{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /*border: red 2px solid;*/
+    z-index: 3;
+    width: 100%;
+    height: 90vh;
+    margin-top: 7%;
+    text-align: center;
+    background: linear-gradient( #83A684, #b5c9b5);
+}
+.flex-contact{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /*border: #ff99cc 2px solid;*/
+    z-index: 3;
+    width: 100%;
+    height: 50vh;
+    margin-top: 7%;
+    text-align: center;
+    /*background-color: #100e17;*/
+}
+.grid-project{
+    
+    font-size: 40px;
+    min-height: 100px;
+    width: 100%;
+    /*background: #100e17;*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto ;
+    grid-row-gap: 10vh;
+    grid-column-gap: 0vh;
+    z-index: 3;
+    /*border: #ffcc99 2px solid;*/
+    
+}
+ .item1{
+     /*background: #ffffff;*/
+     width: 40vh;
+     height: 21vh;
+     font-size: 10px;
+     margin: auto;
+     margin-top: 3vh;
+    font-size: 20px;
+    }
+button{
+    margin-top: 3%; 
+    font-size: 20px;
+    border-radius: 15%;
+    color: #eef6ee;
+    background: #366435
+}
+.grid-togerther{
+    font-size: 40px;
+    min-height: 100px;
+    width: 100%;
+    /*background: #100e17;*/
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-row-gap: 10vh;
+    grid-column-gap: 0vh;
+    z-index: 3;
+    /*border: #ffcc99 2px solid;*/
+    
+}
+.item2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:#59a758;
+    /*border: #ffcc99 2px solid;*/
+    border-radius: 50%;
+     font-size: 10px;
+     margin: auto;
+     margin-top: 3vh;
+     width: 10vh;
+     height: 10vh;
+     text-align: center;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.larger-image {
+    margin: auto;
+    margin-top: 0.5vh;
+    width: 200px;
+    height: 120px;;
+    font-size: 15px;
+    
+}
+.larger-image :hover {
+    
+    box-shadow: 4px 3px 3px #ffffff, -2px 0 3px #ffffff;
+    opacity: 0.7; /*độ mờ đục */}
+
+@media only screen and (max-width: 1000px) {
+    .flex-titel{
+        margin-top: 12vh;
+    }
+    .grid-project{
+    
+        font-size: 30px;
+        min-height: 80px;
+        width: 100%;
+        background: #100e17;
+        display: grid;
+        grid-template-columns: auto ;
+        grid-row-gap: 5vh;
+        grid-column-gap: 0vh;
+        z-index: 1;
+        /*border: #234aba 2px solid;*/
+        
+    }
+    header{
+        justify-content: center;
+    }
+    .flex-project{
+        height: 185vh;
+    }
+}
+@media only screen and (max-width: 500px){
+.item2{
+        border-radius: 20%; 
+       height: 8vh;
+       width: 12vh;
+    }
+.grid-togerther{
+    grid-template-columns: auto ;
+    grid-column-gap: 0vh;
+
+
+}
+.flex-contact{
+    height: 100vh;
+}
+
+}
